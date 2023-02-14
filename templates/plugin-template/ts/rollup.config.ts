@@ -32,9 +32,7 @@ const rollupConfig = [
     ],
     plugins: [
       del({ targets: ['dist/*', 'locale/*'] }),
-      ts({
-        clean: true
-      }),
+      ts(),
       terser()
     ]
   })

@@ -1,6 +1,4 @@
 // @ts-check
-
-import { TAKE_SOUND_ELEMENT5 } from './constants'
 import type lunisolar from 'lunisolar'
 
 // import zh from './locale/zh'
