@@ -1,7 +1,7 @@
 {
   "name": "lunisolar-cli",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "This is a scaffold for quickly generating plugin project templates for lunisolar.js",
   "bin": {
     "lunisolar": "bin/index.js"
   },
@@ -12,9 +12,13 @@
     "dev": "rollup -wc --configPlugin typescript",
     "lint": "eslint --fix --ext .js,.ts src/ "
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["lunisolar", "cli", "plugin"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lunisolar-js/lunisolar-cli"
+  },
+  "author": "Natron Kan (waterbeside)",
+  "license": "MIT",
   "dependencies": {
     "kolorist": "^1.7.0",
     "minimist": "^1.2.8",
