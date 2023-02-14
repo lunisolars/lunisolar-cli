@@ -1,8 +1,8 @@
 import lunisolar from 'lunisolar'
 
-import { pluginName } from '../src/index'
+import { plugin } from '../src/index'
 
-lunisolar.extend(pluginName)
+lunisolar.extend(plugin)
 
 describe('test plugin', () => {
   
