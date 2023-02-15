@@ -1,4 +1,6 @@
 import { defineConfig } from 'rollup'
+import commonjs from '@rollup/plugin-commonjs'
+import { nodeResolve } from '@rollup/plugin-node-resolve'
 import del from 'rollup-plugin-delete'
 import ts from 'rollup-plugin-typescript2'
 import fs from 'fs'
@@ -16,6 +18,8 @@ export default defineConfig({
   ],
   plugins: [
     del({ targets: ['bin/*'] }),
+    nodeResolve(),
+    commonjs(),
     ts(),
   ]
 
