@@ -34,7 +34,7 @@ const rollupConfig = [
         format: 'cjs',
         file: pkg.main,
         exports: 'named',
-        footer: 'module.exports = Object.assign(exports.default, exports);',
+        footer: 'module.exports = Object.assign(exports?.default ?? {}, exports);',
         sourcemap: true
       },
       {
