@@ -13,3 +13,9 @@ npm install -g lunisolar-cli
 # Create a plugin project named 'my-plugin-project'
 lunisolar create-plugin my-plugin-project
 ```
+
+或者使用npx命令:
+
+```sh
+npx lunisolar-cli create-plugin my-plugin-project
+```
