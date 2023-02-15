@@ -66,7 +66,7 @@ const rollupConfig = [
         defineConfig({
           input,
           output: {
-            name: `${pluginGlobelName}_locale_${fileName}`,
+            name: `${pluginGlobelName}_locale_${formatName(fileName)}`,
             file: path.join(outputDir, `${fileName}.js`),
             format: 'umd'
           },
