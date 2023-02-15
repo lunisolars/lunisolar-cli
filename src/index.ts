@@ -1,7 +1,7 @@
 
 import minimist from 'minimist'
 import { createPlugin } from './createPlugin'
-// import { red } from 'kolorist'
+import { green } from 'kolorist'
 import { readJsonFile } from './utils'
 
 import path, { dirname } from 'node:path'
@@ -17,8 +17,8 @@ const argv = minimist<{
 
 ;(async () => {
   if (argv._.length === 0) {
-    console.log('lunisolar-cli version:', pkg.version)
-    process.exit(0)
+    console.log('lunisolar-cli version:', green(pkg.version))
+    return
   }
   try {
     if (argv._.length > 0 && argv._[0] ===  'create-plugin') {
