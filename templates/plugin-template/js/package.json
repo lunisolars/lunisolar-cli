@@ -1,6 +1,6 @@
 {
   "name": "plugin-name",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A lunisolar.js plugin",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -8,11 +8,19 @@
   "scripts": {
     "build": "rollup -c",
     "lint": "eslint --fix --ext .js src/ typings/ __tests__/",
-    "test": "jest"
+    "test": "jest",
+    "changelog": "conventional-changelog -p angular  -i CHANGELOG.md -s "
+  },
+  "keywords": [],
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": ""
   },
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.0",
+    "conventional-changelog-cli": "^2.2.2",
     "eslint": "^8.34.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",

@@ -1,6 +1,6 @@
 {
   "name": "plugin-name",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A lunisolar.js plugin",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -8,7 +8,14 @@
   "scripts": {
     "build": "rollup -c --configPlugin typescript",
     "lint": "eslint --fix --ext .js,.ts src/ typings/ __tests__/",
-    "test": "jest"
+    "test": "jest",
+    "changelog": "conventional-changelog -p angular  -i CHANGELOG.md -s "
+  },
+  "keywords": [],
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": ""
   },
   "license": "MIT",
   "devDependencies": {
@@ -18,6 +25,7 @@
     "@types/jest": "^29.4.0",
     "@types/node": "^18.13.0",
     "@typescript-eslint/parser": "^5.51.0",
+    "conventional-changelog-cli": "^2.2.2",
     "eslint": "^8.34.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
