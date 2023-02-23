@@ -1,6 +1,6 @@
 {
   "name": "lunisolar-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "This is a scaffold for quickly generating plugin project templates for lunisolar.js",
   "bin": {
     "lunisolar": "bin/index.js"
