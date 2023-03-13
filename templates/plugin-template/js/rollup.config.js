@@ -1,6 +1,9 @@
 import { defineConfig } from 'rollup'
 import del from 'rollup-plugin-delete'
 import terser from '@rollup/plugin-terser'
+import peerDepsExternal from 'rollup-plugin-peer-deps-external'
+import filesize from 'rollup-plugin-filesize'
+import { nodeResolve } from '@rollup/plugin-node-resolve'
 import path from 'path'
 import fs from 'fs'
 
@@ -43,7 +46,13 @@ const rollupConfig = [
         sourcemap: true
       }
     ],
-    plugins: [del({ targets: ['dist/*', 'locale/*'] }), terser()]
+    plugins: [
+      del({ targets: ['dist/*', 'locale/*'] }),
+      peerDepsExternal(),
+      nodeResolve(),
+      terser(),
+      filesize()
+    ]
   })
 ]
 
