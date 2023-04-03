@@ -8,9 +8,9 @@ specifiers:
   '@types/node': ^18.13.0
   '@types/prompts': ^2.4.2
   '@typescript-eslint/parser': ^5.51.0
+  commander: ^10.0.0
   eslint: ^8.34.0
   kolorist: ^1.7.0
-  minimist: ^1.2.8
   prompts: ^2.4.2
   rollup: ^3.15.0
   rollup-plugin-delete: ^2.0.0
@@ -19,8 +19,8 @@ specifiers:
   typescript: ^4.9.5
 
 dependencies:
+  commander: 10.0.0
   kolorist: 1.7.0
-  minimist: 1.2.8
   prompts: 2.4.2
 
 devDependencies:
@@ -429,6 +429,11 @@ packages:
   /color-name/1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
     dev: true
+
+  /commander/10.0.0:
+    resolution: {integrity: sha512-zS5PnTI22FIRM6ylNW8G4Ap0IEOyk62fhLSD0+uHRT9McRCLGpkVNvao4bjimpK/GShynyQkFFxHhwMcETmduA==}
+    engines: {node: '>=14'}
+    dev: false
 
   /commondir/1.0.1:
     resolution: {integrity: sha512-W9pAhw0ja1Edb5GVdIF1mjZw/ASI0AlShXM83UUGe2DVr5TdAPEA1OA8m/g8zWp9x6On7gqufY+FatDbC3MDQg==}
@@ -1016,10 +1021,6 @@ packages:
     dependencies:
       brace-expansion: 2.0.1
     dev: true
-
-  /minimist/1.2.8:
-    resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
-    dev: false
 
   /ms/2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
